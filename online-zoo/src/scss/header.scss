@@ -1,0 +1,140 @@
+.header {
+	padding: 14px 0px;
+	background-color: $black;
+	
+
+	@media (max-width: 640px) {
+		padding: 0;
+	}
+
+	&__container { 
+		display: flex;
+		align-items: center;
+		max-height: 80px;
+		justify-content: space-between;
+		@media (max-width: 640px) {
+			min-height: 34px;
+		}
+	}
+	&__logo { 
+		color: $white;
+		border-radius: 2px;
+		border: 1px solid $white;
+		padding: 2.55px 3.75px;	
+		text-align: center;
+		font-size: 19.014px;
+		line-height: 120%;
+		max-width: 82px;
+		max-height: 52px;
+
+		@media (max-width: 640px) {
+			border: none;
+			font-size: 12.29px;
+			z-index: 50;
+			max-width: 47px;
+		}
+	}
+}
+
+.navigation {
+	&__list { 
+		display: flex;
+
+		@media (max-width: 640px) {
+			flex-direction: column;
+        	align-items: center;
+		}
+	}
+	&__item { 
+		margin-right: 58px;
+		&:last-child {
+			margin-right: 0;
+		}
+		@media (max-width: 640px) {
+			&:not(:last-child) {
+				margin-right: 0px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	&__link { 
+		color: $white;
+		font-family: Roboto;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 140%; 
+		transition: all 0.5s;
+
+		&:hover {
+			color: $orange;
+			transition: all 0.5s;
+		}
+		@media (max-width: 640px) {
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		& {
+		position: absolute;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		background-color: $black;
+		transition: top 0.3s ease 0s;
+        z-index: 10;
+		padding: 100px;
+		}
+	}
+	&._active {
+		top: 0;
+	}
+}
+.menu__icon {
+	display: none;
+
+	@media (max-width: 640px) {
+		& {
+			z-index: 10;
+			display: block;
+			position: relative;
+			width: 18px;
+			height: 10px;
+			cursor: pointer;
+		}
+		&::before, &::after,  span {
+			left: 0;
+			position: absolute;
+			height: 20%;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			background-color: $white;
+			border-radius: 2px;
+		}
+		&::after, &::before {
+			content: "";
+		}
+		&::after {
+			bottom: 0;
+		}
+		&::before {
+			top: 0;
+		}
+		span {
+			top: 50%;
+        	transform: scale(1) translate(0px, -50%);
+		}
+		&._active span {
+			transform: scale(0) translate(0px, -50%);
+		}
+		&._active::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0px, -50%);
+		}
+		&._active::after {
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 50%);
+		}
+	}
+}
+
