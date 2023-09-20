@@ -213,9 +213,7 @@ $orange: #F9804B;
 .animals {
 	background: url(/img/animals/bg01.png) bottom left no-repeat, url(/img/animals/bg02.png) bottom right no-repeat;
 	padding: 84px 0px 100px;
-	&__container { 
-		
-	}
+	
 
 	@media (max-width: 1100px) {
 		& {
