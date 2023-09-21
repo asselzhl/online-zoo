@@ -51,3 +51,7 @@ function changeClientWidth () {
 
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
+
+
+
+
