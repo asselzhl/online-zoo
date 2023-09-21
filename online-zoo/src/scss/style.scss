@@ -25,7 +25,7 @@ $orange: #F9804B;
 	}
 }
 
-.about {
+.home {
 	color: #F9804B;
 }
 
@@ -213,7 +213,13 @@ $orange: #F9804B;
 .animals {
 	background: url(/img/animals/bg01.png) bottom left no-repeat, url(/img/animals/bg02.png) bottom right no-repeat;
 	padding: 84px 0px 100px;
-	
+
+	&__button {
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 
 	@media (max-width: 1100px) {
 		& {
@@ -237,37 +243,27 @@ $orange: #F9804B;
 		overflow-x: hidden;
     	width: 100%;
 		
+		@media (max-width: 768px) {
+			& {
+				max-width: 520px;
+				margin-left: auto;
+				margin-right: auto;
+				
+			}
+		}
 	}
 	&__wrapper { 
 		display: flex;
 		gap: 0px 30px;
 		transition: ease 0.5s;
 		
+		
 	}
 	
-
-	@media (max-width: 1100px) {
-		& {
-			max-width: 536px;
-		}
-	}
-	@media (max-width: 555px) {
-		& {
-			max-width: 450px;
-			margin-bottom: 40px;
-		}
-	}
-	@media (max-width: 460px) {
-		& {
-			max-width: 300px;
-		}
-	}
 	
 }
 
 .cards {
-	border-radius: 5px;
-	border: 1px solid $orange;
 	flex: 0 0 31%;
 	display: flex;
 	flex-direction: column;
@@ -281,7 +277,6 @@ $orange: #F9804B;
 		height: 100%;
 		width: 100%;
 		background-color: rgba(17, 17, 21, 0.8);
-		border-radius: 5px;
 		z-index: 10;
 		opacity: 0;
 		visibility: hidden;
@@ -316,7 +311,6 @@ $orange: #F9804B;
 		overflow-y: visible;
 		img {
 			width: 100%;
-			border-radius: 5px 5px 0px 0px;
 			object-fit: contain;
 			transition: all 0.5s;
 		}
@@ -327,8 +321,7 @@ $orange: #F9804B;
 		padding: 8px 12px 14px 16px;
 		display: flex;
 		justify-content: space-between;
-		background-color: $white;
-		border-radius: 0px 0px 5px 5px;
+		background-color:#FEBDAB;
 		transition: top 1s;
 	}
 	
@@ -345,7 +338,12 @@ $orange: #F9804B;
 	}
 	
 
-	@media (max-width: 1100px) {
+	@media (max-width: 860px) {
+		& {
+			flex: 0 0 48%;
+		}
+	}
+	@media (max-width: 768px) {
 		& {
 			flex: 0 0 100%;
 		}

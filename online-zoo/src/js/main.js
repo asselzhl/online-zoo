@@ -21,13 +21,10 @@ menuIcon.addEventListener('click', function () {
 
 
 //Slider
-
-let increment = 3;
-if(sliderWrapper.clientWidth <= 368) {
-    increment = 1;
-}
-console.log(increment)
+let imageWidth = sliderWrapper.firstElementChild.offsetWidth;
 let currentIndex = 0;
+let increment = parseInt(sliderWrapper.clientWidth / imageWidth);
+
 function prevSlide () {
     if (currentIndex == 0) {
         return;
@@ -48,7 +45,6 @@ function nextSlide () {
 
 
 function changeClientWidth () {
-    let imageWidth = sliderWrapper.firstElementChild.clientWidth;
     let pixels = (-imageWidth - 30) * currentIndex;
     sliderWrapper.style.transform = 'translateX(' + pixels + 'px)';
 }
