@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetStory</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <p class="header__logo">PetStory online</p>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="/index.html" class="navigation__link">About</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Map</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Zoos</a></li>
+                        <li class="navigation__item"><a href="/donate/index.html" class="navigation__link donate">Donate</a></li>
+                        <li class="navigation__item"><a href="" class="navigation__link">Contact us</a></li>
+                    </ul>
+                </nav>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+        </header><main class="main">
+            <section class="welcome">
+                <div class="welcome__bg ibg">
+                    <img src="../img/Giant Panda.jpg" alt="Giant Panda">
+                </div>
+            </section>
+            <section class="donation">
+                <div class="donation__container _container">
+                    <div class="donation__aside aside">
+                        <h2 class="aside__title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h2>
+                        <p class="aside__text">Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today – no matter what size – to help us sustain our mission.</p>
+                    </div>
+                    <h3 class="donation__title">Donation Information</h3>
+                    <div class="donation__pick pick">
+                        <h2 class="pick__title">Pick and feed a friend</h2>
+                        <h4 class="pick__subtitle">We know the animals bring you joy, and in these extraordinary times, we’re glad.</h4>
+                        <div class="pick__widget widget">
+                            <div class="widget__amount amount">
+                                <p class="amount__digit">4</p>
+                                <p class="amount__text">Panda diet for the day.</p>
+                            </div>
+                            <div class="widget__icon">
+                                <img src="/svg/donate x.svg" alt="">
+                            </div>
+                            <div class="widget__animal">
+                                <img src="/svg/panda icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="pick__progressbar progressbar">
+                            <div class="progressbar__line"></div>
+                            <div class="progressbar__item" id="firstItem">
+                                <input type="radio" class="progressbar__input" id="5000" name="dollars" value="5000">
+                                <label for="5000" class="progressbar__label"><span>$5000</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="2000" name="dollars" value="2000">
+                                <label for="2000" class="progressbar__label"><span>$2000</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="1000" name="dollars" value="1000">
+                                <label for="1000" class="progressbar__label"><span>$1000</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="500" name="dollars" value="500">
+                                <label for="500" class="progressbar__label"><span>$500</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="250" name="dollars" value="250">
+                                <label for="250" class="progressbar__label"><span>$250</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="100" name="dollars" value="100">
+                                <label for="100" class="progressbar__label"><span>$100</span></label>
+                            </div>
+                            <div class="progressbar__item">
+                                <input type="radio" class="progressbar__input" id="50" name="dollars" value="50">
+                                <label for="50" class="progressbar__label"><span>$50</span></label>
+                            </div>
+                            <div class="progressbar__item" id="lastItem">
+                                <input type="radio" class="progressbar__input" id="25" checked name="dollars" value="25">
+                                <label for="25" class="progressbar__label"><span>$25</span></label>
+                            </div>
+                        </div>
+                        <div class="pick__input">
+                            <input type="text" name="money" id="moneyAmount" placeholder="Another amount">
+                        </div>
+                        <div class="pick__options options">
+                            <div class="options__item">
+                                <input type="radio" class="options__input" id="monthly" checked name="subscription">
+                                <label for="monthly" class="options__label">Monthly</label>
+                            </div>
+                            <div class="options__item">
+                                <input type="radio" class="options__input" id="once" name="subscription">
+                                <label for="once" class="options__label">Once</label>
+                            </div>
+                        </div>
+                        <button class="main__button rounded pick__button">Feed a friend now</button>
+                        <p class="pick__text">Share with your friends on social networks</p>
+                    </div>
+                </div>
+            </section>
+        </main><footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__content">
+                    <div class="footer__column">
+                        <div class="footer__logo">PetStory online</div>
+                        <div class="main__button footer__button">donate for volunteers</div>
+                    </div>
+                    <div class="footer__actions actions">
+                        <h3 class="actions__title">Subscribe to our news</h4>
+                        <input type="email" class="actions__input" placeholder="Enter your email">
+                        <button class="actions__button">Submit</button>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__row">
+                    <div class="footer__credits"><a href="">Assel Zholaushybay</a></div>
+                    <div class="footer__socials socials">
+                        <ul class="socials__list">
+                            <li class="socials__item"><a href="" class="socials__link"><img src="/svg/socials01.svg" alt=""></a></li>
+                            <li class="socials__item"><a href="" class="socials__link"><img src="/svg/socials02.svg" alt=""></a></li>
+                            <li class="socials__item"><a href="" class="socials__link"><img src="/svg/socials03.svg" alt=""></a></li>
+                            <li class="socials__item"><a href="" class="socials__link"><img src="/svg/socials04.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>    
+    </div>
+    <script type="module" src="/donate/donate.js"></script>
+  </body>
+</html>

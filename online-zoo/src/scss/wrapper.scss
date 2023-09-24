@@ -1,0 +1,18 @@
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: 1160px;
+    margin: 0px auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+
+	@media (max-width: 640px) {
+		& {
+			max-width: 600px;
+		}
+	}
+}
